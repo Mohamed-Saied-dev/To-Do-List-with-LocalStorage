@@ -86,9 +86,6 @@ function addTasksToPage(arrayOfTasks) {
         if (task.completed) {
             taskDiv.classList.add("done");
         }
-        else {
-            taskDiv.classList.remove("done");
-        }
     })
 }
 
