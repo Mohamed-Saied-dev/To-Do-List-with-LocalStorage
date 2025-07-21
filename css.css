@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     user-select: none;
-    
+
 }
+
 body {
-    background-color: #E6F0FA;
+    background: linear-gradient(to right, #01bbeef2, #016becef);
     min-height: 1000px;
 }
+
 /* Start Header Section */
 
 
@@ -52,7 +54,7 @@ body {
     font-size: 1.6em;
     font-weight: bold;
     color: #0072ff;
-  margin-bottom: 5px;
+    margin-bottom: 5px;
 }
 
 .header-section .author-content .about {
@@ -69,15 +71,17 @@ body {
     background-color: #0072ff;
     color: white;
 }
+
 @keyframes animation1 {
-  from {
-    opacity: 0;
-    transform: translateY(-150px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* End Header Section*/
@@ -88,14 +92,16 @@ body {
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
+
 /* Phone Screen */
 @media (max-width: 600px) {
     .container {
         width: 95%;
 
     }
+
     .body {
         font-size: 15px;
     }
@@ -107,6 +113,7 @@ body {
         width: 80%;
         padding: 18px;
     }
+
     .body {
         font-size: 16px;
     }
@@ -118,6 +125,7 @@ body {
         width: 65%;
         padding: 20px;
     }
+
     .body {
         font-size: 18px;
 
@@ -131,29 +139,33 @@ form {
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
     text-align: center;
-    
+
 }
+
 .input {
-  width: 80%;
-  height: 40px;
-  padding-left: 10px;
-  border-radius: 5px;
-  margin-right: 10px;
-  border: 2px solid rgb(225, 224, 224);
-  outline: none;
-  transition: border-color .3s ease;
-  background-color: #ffffff;
+    width: 80%;
+    height: 40px;
+    padding-left: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid rgb(225, 224, 224);
+    outline: none;
+    transition: border-color .3s ease;
+    background-color: #ffffff;
 }
+
 @media (max-width: 600px) {
-  .input {
-    margin-bottom: 10px;
-    width: 100%;
-  }
+    .input {
+        margin-bottom: 10px;
+        width: 100%;
+    }
 }
+
 .input:focus {
-  border-color: #ff6B6B;
+    border-color: #ff6B6B;
     box-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
 }
+
 .add {
     height: 40px;
     padding: 5px;
@@ -165,13 +177,15 @@ form {
     border: none;
     transition: background-color 150ms ease;
 }
+
 .add:hover {
     background-color: #f80000;
 }
+
 .container .delAll {
-   
+
     display: flex;
-    
+
     margin: 0 20px 0 auto;
     height: 30px;
     padding: 5px;
@@ -183,9 +197,11 @@ form {
     border: none;
     transition: background-color 150ms ease;
 }
+
 .container .delAll:hover {
-  background-color: #f80000;
+    background-color: #f80000;
 }
+
 .tasks {
     background-color: #f0f7ff;
     padding: 25px;
@@ -194,16 +210,18 @@ form {
     display: grid;
     gap: 10px;
 }
+
 .tasks .task {
     display: flex;
     gap: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #d3e6fc;
+    background: linear-gradient(to right, #4801eef2, #9a01ecef);
     cursor: pointer;
-    
+
 
 }
+
 .tasks .task .task-text {
     padding: 10px;
     background-color: #ffffff;
@@ -211,23 +229,26 @@ form {
     font-size: .9em;
     border-radius: 5px;
     text-align:
-    
+
 }
+
 .tasks .task .task-text span {
-  display: inline-block;
-  background-color: white;
-  height: 14px;
-  width: 14px;
-  border: solid 1px black;
-  border-radius: 50%;
-  margin-right: 10px;
-  position: relative;
-  top: 2px;
+    display: inline-block;
+    background-color: white;
+    height: 14px;
+    width: 14px;
+    border: solid 1px black;
+    border-radius: 50%;
+    margin-right: 10px;
+    position: relative;
+    top: 2px;
 }
+
 .tasks .done .task-text span {
-  background-color: black;
-  border: white 2px solid;
+    background-color: black;
+    border: white 2px solid;
 }
+
 .tasks .task .delete {
     align-self: center;
     padding: 7px 5px;
@@ -239,13 +260,13 @@ form {
     border: none;
     transition: background-color 150ms ease;
 }
+
 .tasks .task .delete:hover {
     background-color: #f80000;
 }
 
 .done .task-text {
-  font-weight: 900;
-  text-decoration: line-through black;
-  color: rgb(255, 255, 255);
-  background-color: rgba(0, 85, 0, 0.137) !important;
+    text-decoration: line-through black;
+    color: rgb(0, 0, 0);
+    background-color: rgb(220, 242, 220) !important;
 }
